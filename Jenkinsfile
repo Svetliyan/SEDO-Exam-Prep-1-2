@@ -1,9 +1,5 @@
 pipeline {
     agent any
-    environment {
-        PATH = "/usr/local/share/dotnet:${env.PATH}"
-    }
-
     stages{
         stage("Restore dependencies"){
             when {
